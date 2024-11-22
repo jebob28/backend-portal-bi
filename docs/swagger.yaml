@@ -1,0 +1,210 @@
+basePath: /api/bi/v1/
+externalDocs:
+  description: OpenAPI
+  url: https://swagger.io/resources/open-api/
+host: localhost:8080
+info:
+  contact: {}
+  title: Swagger Examplo API Do BI
+  version: "1.0"
+paths:
+  /atualizarlinkbi:
+    put:
+      description: Endpoint para atualizar Bi
+      parameters:
+      - description: id do seto responsavel
+        in: query
+        name: idsetor
+        required: true
+        type: integer
+      - description: 'id do bi a ser atualizado '
+        in: query
+        name: idbi
+        required: true
+        type: integer
+      - description: novo link do bi
+        in: query
+        name: link
+        required: true
+        type: string
+      responses: {}
+      summary: Atualizar link do BI
+      tags:
+      - BI
+  /atualizarusuario:
+    put:
+      description: Endpoint para atualizar usuario
+      parameters:
+      - description: id do setor responsavel
+        in: query
+        name: usuario
+        required: true
+        type: string
+      - description: novo nome do setor
+        in: query
+        name: iduser
+        required: true
+        type: integer
+      - description: novo nome do setor
+        in: query
+        name: idsetor
+        required: true
+        type: integer
+      responses: {}
+      summary: Atualizar usuario
+      tags:
+      - Usuario
+  /atualizasetor:
+    put:
+      description: Endpoint para atualizar Setor
+      parameters:
+      - description: id do setor responsavel
+        in: query
+        name: id_setor
+        required: true
+        type: integer
+      - description: novo nome do setor
+        in: query
+        name: nome_setor
+        required: true
+        type: string
+      responses: {}
+      summary: Atualizar Setor
+      tags:
+      - Setor
+  /cadastrarbi:
+    post:
+      description: Endpoint para cadastrar link do BI
+      parameters:
+      - description: link do bi
+        in: query
+        name: link
+        required: true
+        type: string
+      - description: id do setor
+        in: query
+        name: id_setor
+        required: true
+        type: integer
+      responses: {}
+      summary: Cadastrar link do Bi
+      tags:
+      - BI
+  /cadastrosetor:
+    post:
+      description: Endpoint para cadastrar um novo setor
+      parameters:
+      - description: Nome do setor a ser cadastrado
+        in: query
+        name: nome
+        required: true
+        type: string
+      responses: {}
+      summary: Cadastrar um novo setor
+      tags:
+      - Setor
+  /cadastrousuario:
+    post:
+      description: Endpoint para cadastrar um novo usuario
+      parameters:
+      - description: Nome do usuario a ser cadastrado
+        in: query
+        name: nome
+        required: true
+        type: string
+      - description: login do usuario
+        in: query
+        name: login
+        required: true
+        type: string
+      - description: id do setor
+        in: query
+        name: id_setor
+        required: true
+        type: integer
+      - description: permisao
+        in: query
+        name: permisao
+        required: true
+        type: integer
+      - description: email do usuario
+        in: query
+        name: email
+        required: true
+        type: string
+      - description: senha do usuario
+        in: query
+        name: senha
+        required: true
+        type: string
+      responses: {}
+      summary: Cadastrar um novo usuario
+      tags:
+      - Usuario
+  /deletarlink:
+    delete:
+      description: Endpoint para Deletar Link do Bi
+      parameters:
+      - description: id do seto responsavel
+        in: query
+        name: idlink
+        required: true
+        type: integer
+      responses: {}
+      summary: Deletar link do BI
+      tags:
+      - BI
+  /deletaruser:
+    delete:
+      description: Endpoint para Deletar Usuario
+      parameters:
+      - description: id do seto responsavel
+        in: query
+        name: id
+        required: true
+        type: integer
+      responses: {}
+      summary: Deletar Usuario
+      tags:
+      - Usuario
+  /deletesetor:
+    delete:
+      description: Endpoint para Deletar Setor
+      parameters:
+      - description: id do seto responsavel
+        in: query
+        name: idsetor
+        required: true
+        type: integer
+      responses: {}
+      summary: Deletar Setor
+      tags:
+      - Setor
+  /links:
+    get:
+      description: Endpoint para GET usuarios
+      parameters:
+      - description: id do setor
+        in: query
+        name: idsetor
+        required: true
+        type: string
+      responses: {}
+      summary: Selecionar o link do BI
+      tags:
+      - BI
+  /setor:
+    get:
+      description: Endpoint para GET Setor
+      responses: {}
+      summary: Selecionar o setor
+      tags:
+      - Setor
+  /usuarios:
+    get:
+      description: Endpoint para GET usuarios
+      responses: {}
+      summary: Selecionar o usuarios
+      tags:
+      - Usuario
+swagger: "2.0"

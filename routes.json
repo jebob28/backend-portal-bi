@@ -1,0 +1,50 @@
+[
+  {
+    "method": "POST",
+    "path": "/api/bi/v1/cadastrosetor"
+  },
+  {
+    "method": "POST",
+    "path": "/api/bi/v1/cadastrousuario"
+  },
+  {
+    "method": "POST",
+    "path": "/api/bi/v1/cadastrarbi"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/bi/v1/atualizarusuario"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/bi/v1/atualizarlinkbi"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/bi/v1/atualizasetor"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/bi/v1/deletaruser"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/bi/v1/deletarlink"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/bi/v1/deletesetor"
+  },
+  {
+    "method": "GET",
+    "path": "/api/bi/v1/setor"
+  },
+  {
+    "method": "GET",
+    "path": "/api/bi/v1/usuarios"
+  },
+  {
+    "method": "GET",
+    "path": "/api/bi/v1/links"
+  }
+]
