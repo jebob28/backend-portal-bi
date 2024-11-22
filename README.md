@@ -157,4 +157,4 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` p
 
 ## ✨ Autor
 
-Desenvolvido com 💻 por [Seu Nome](https://github.com/seu-usuario).
+Desenvolvido com 💻 por [Seu Nome](https://github.com/jebob28).
